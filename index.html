@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin học 12 | HTML cơ bản</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="prompt">>&nbsp;</span> STUDY_TERMINAL<span class="cursor">_</span></div>
+    <div class="top-note">TIN HỌC 12 <span>//</span> ÔN TẬP HTML</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="side-label">NỘI DUNG</p>
+      <a href="#bai7" class="nav-link active"><span>01</span> Bài 7 · Cấu trúc web</a>
+      <a href="#bai8" class="nav-link"><span>02</span> Bài 8 · Định dạng</a>
+      <a href="#bai9" class="nav-link"><span>03</span> Bài 9 · Danh sách & bảng</a>
+      <a href="#bai10" class="nav-link"><span>04</span> Bài 10 · Siêu liên kết</a>
+      <a href="#bai11" class="nav-link"><span>05</span> Bài 11 · Đa phương tiện</a>
+      
+    </aside>
+
+    <main class="content">
+      <section class="hero">
+        <p class="eyebrow">/ KNOWLEDGE_BASE / HTML</p>
+        <h1>Tin học 12<span class="accent">.</span></h1>
+        <p class="hero-sub">Tóm tắt bài 7 — 11 · Gọn, dễ nhớ, dễ ôn.</p>
+        <div class="hero-bottom"><span><i class="status-dot"></i> SYSTEM READY</span><span>5 MODULES LOADED</span></div>
+      </section>
+
+      <section class="lesson" id="bai7">
+        <div class="lesson-heading"><span class="lesson-no">01</span><div><p class="eyebrow">MODULE_01</p><h2>Bài 7. HTML và cấu trúc trang web</h2></div></div>
+        <p><strong>HTML</strong> (HyperText Markup Language) là ngôn ngữ đánh dấu siêu văn bản, dùng để tạo cấu trúc và nội dung trang web; <strong>không phải ngôn ngữ lập trình</strong>.</p>
+        <h3>Cấu trúc cơ bản</h3>
+        <pre><code><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Tiêu đề trang<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    Nội dung hiển thị trên trang
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
+        <div class="info-grid">
+          <div class="info-card"><code>&lt;!DOCTYPE html&gt;</code><p>Khai báo tài liệu HTML5.</p></div>
+          <div class="info-card"><code>&lt;html&gt;</code><p>Phần tử gốc của trang.</p></div>
+          <div class="info-card"><code>&lt;head&gt;</code><p>Chứa thông tin về trang.</p></div>
+          <div class="info-card"><code>&lt;body&gt;</code><p>Chứa nội dung hiển thị.</p></div>
+        </div>
+        <h3>Thẻ thường gặp</h3>
+        <div class="tag-list">
+          <div><code>&lt;h1&gt; – &lt;h6&gt;</code><span>Tiêu đề từ lớn đến nhỏ</span></div>
+          <div><code>&lt;p&gt;</code><span>Đoạn văn</span></div>
+          <div><code>&lt;b&gt; / &lt;strong&gt;</code><span>In đậm / nhấn mạnh</span></div>
+          <div><code>&lt;i&gt; / &lt;em&gt;</code><span>In nghiêng / nhấn mạnh</span></div>
+          <div><code>&lt;br&gt;</code><span>Xuống dòng</span></div>
+          <div><code>&lt;hr&gt;</code><span>Đường kẻ ngang</span></div>
+        </div>
+      </section>
+
+      <section class="lesson" id="bai8">
+        <div class="lesson-heading"><span class="lesson-no">02</span><div><p class="eyebrow">MODULE_02</p><h2>Bài 8. Định dạng văn bản</h2></div></div>
+        <p><strong>Thuộc tính HTML</strong> bổ sung thông tin cho thẻ và được viết trong thẻ mở. Thuộc tính <code>style</code> dùng để định dạng trực tiếp phần tử.</p>
+        <pre><code><span class="tag">&lt;p</span> <span class="attr">style</span>=<span class="value">"color: blue; font-size: 18px;"</span><span class="tag">&gt;</span>
+  Văn bản được định dạng
+<span class="tag">&lt;/p&gt;</span></code></pre>
+        <div class="tag-list">
+          <div><code>color</code><span>Màu chữ</span></div>
+          <div><code>font-family</code><span>Phông chữ</span></div>
+          <div><code>font-size</code><span>Cỡ chữ</span></div>
+        </div>
+        <div class="info-grid two">
+          <div class="info-card"><code>&lt;div&gt;</code><p>Phần tử dạng khối, thường bắt đầu ở dòng mới.</p></div>
+          <div class="info-card"><code>&lt;span&gt;</code><p>Phần tử nội dòng, không tự xuống dòng.</p></div>
+        </div>
+        <p class="note"><span>!</span> Khi viết nhiều thuộc tính trong <code>style</code>, ngăn cách chúng bằng dấu chấm phẩy <code>;</code>.</p>
+      </section>
+
+      <section class="lesson" id="bai9">
+        <div class="lesson-heading"><span class="lesson-no">03</span><div><p class="eyebrow">MODULE_03</p><h2>Bài 9. Tạo danh sách và bảng</h2></div></div>
+        <h3>Ba loại danh sách</h3>
+        <div class="info-grid">
+          <div class="info-card"><code>&lt;ul&gt;</code><p>Danh sách không thứ tự, thường dùng dấu đầu dòng.</p></div>
+          <div class="info-card"><code>&lt;ol&gt;</code><p>Danh sách có thứ tự; có thể dùng <code>type</code>, <code>start</code>.</p></div>
+          <div class="info-card"><code>&lt;dl&gt;</code><p>Danh sách mô tả, gồm <code>&lt;dt&gt;</code> (tên mục) và <code>&lt;dd&gt;</code> (mô tả).</p></div>
+        </div>
+        <p class="muted">Có thể tạo danh sách lồng nhau bằng cách đặt một danh sách bên trong mục của danh sách khác.</p>
+        <h3>Các thẻ tạo bảng</h3>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Thẻ</th><th>Chức năng</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;table&gt;</code></td><td>Tạo bảng</td></tr>
+            <tr><td><code>&lt;tr&gt;</code></td><td>Tạo hàng</td></tr>
+            <tr><td><code>&lt;td&gt;</code></td><td>Ô dữ liệu thông thường</td></tr>
+            <tr><td><code>&lt;th&gt;</code></td><td>Ô tiêu đề</td></tr>
+            <tr><td><code>&lt;caption&gt;</code></td><td>Tiêu đề bảng</td></tr>
+          </tbody>
+        </table></div>
+        <div class="info-grid">
+          <div class="info-card"><code>border</code><p>Tạo đường viền bảng.</p></div>
+          <div class="info-card"><code>width / height</code><p>Thiết lập chiều rộng / cao.</p></div>
+          <div class="info-card"><code>colspan</code><p>Gộp ô theo chiều ngang (nhiều cột).</p></div>
+          <div class="info-card"><code>rowspan</code><p>Gộp ô theo chiều dọc (nhiều hàng).</p></div>
+        </div>
+      </section>
+
+      <section class="lesson" id="bai10">
+        <div class="lesson-heading"><span class="lesson-no">04</span><div><p class="eyebrow">MODULE_04</p><h2>Bài 10. Siêu văn bản và đường dẫn</h2></div></div>
+        <p><strong>Siêu văn bản (hypertext)</strong> có thể chứa văn bản, hình ảnh, âm thanh và siêu liên kết. <strong>Siêu liên kết (hyperlink)</strong> dẫn đến trang hoặc tài nguyên khác.</p>
+        <pre><code><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"https://example.com"</span><span class="tag">&gt;</span>
+  Mở trang web
+<span class="tag">&lt;/a&gt;</span></code></pre>
+        <p><code>href</code> chỉ định địa chỉ đích của liên kết.</p>
+        <h3>Hai loại đường dẫn</h3>
+        <div class="info-grid two">
+          <div class="info-card"><h4>Đường dẫn tuyệt đối</h4><p>Địa chỉ đầy đủ, thường gồm giao thức và tên miền.</p><code>https://example.com/page.html</code></div>
+          <div class="info-card"><h4>Đường dẫn tương đối</h4><p>Xác định vị trí tệp dựa trên tệp hiện tại.</p><code>page.html</code><br><code>folder/page.html</code><br><code>../page.html</code></div>
+        </div>
+        <h3>Liên kết trong cùng trang</h3>
+        <pre><code><span class="tag">&lt;h2</span> <span class="attr">id</span>=<span class="value">"phan-2"</span><span class="tag">&gt;</span>Phần 2<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"#phan-2"</span><span class="tag">&gt;</span>Đi đến Phần 2<span class="tag">&lt;/a&gt;</span></code></pre>
+        <p>Muốn dùng hình ảnh làm liên kết, đặt thẻ <code>&lt;img&gt;</code> bên trong thẻ <code>&lt;a&gt;</code>.</p>
+      </section>
+
+      <section class="lesson" id="bai11">
+        <div class="lesson-heading"><span class="lesson-no">05</span><div><p class="eyebrow">MODULE_05</p><h2>Bài 11. Tệp đa phương tiện và khung nội tuyến</h2></div></div>
+        <h3>Chèn hình ảnh</h3>
+        <pre><code><span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="value">"anh.jpg"</span> <span class="attr">alt</span>=<span class="value">"Mô tả ảnh"</span>
+     <span class="attr">width</span>=<span class="value">"300"</span><span class="tag">&gt;</span></code></pre>
+        <div class="tag-list">
+          <div><code>&lt;img&gt;</code><span>Chèn ảnh</span></div>
+          <div><code>src</code><span>Đường dẫn nguồn ảnh; cần có để hiển thị ảnh</span></div>
+          <div><code>alt</code><span>Văn bản thay thế khi ảnh không hiển thị hoặc cho trình đọc màn hình</span></div>
+          <div><code>width / height</code><span>Chiều rộng / chiều cao</span></div>
+        </div>
+        <h3>Âm thanh, video và khung nội tuyến</h3>
+        <div class="info-grid">
+          <div class="info-card"><code>&lt;audio&gt;</code><p>Nhúng âm thanh vào trang web.</p></div>
+          <div class="info-card"><code>&lt;video&gt;</code><p>Nhúng video vào trang web.</p></div>
+          <div class="info-card"><code>&lt;iframe&gt;</code><p>Nhúng trang web hoặc tài nguyên khác trong một khung.</p></div>
+        </div>
+        <pre><code><span class="tag">&lt;video</span> <span class="attr">src</span>=<span class="value">"video.mp4"</span> <span class="attr">controls</span> <span class="attr">loop</span>
+       <span class="attr">poster</span>=<span class="value">"bia.jpg"</span><span class="tag">&gt;&lt;/video&gt;</span>
+
+<span class="tag">&lt;iframe</span> <span class="attr">src</span>=<span class="value">"trang.html"</span> <span class="attr">width</span>=<span class="value">"500"</span>
+        <span class="attr">height</span>=<span class="value">"300"</span> <span class="attr">title</span>=<span class="value">"Khung nội tuyến"</span><span class="tag">&gt;&lt;/iframe&gt;</span></code></pre>
+        <div class="tag-list">
+          <div><code>controls</code><span>Hiện nút điều khiển</span></div>
+          <div><code>autoplay</code><span>Yêu cầu tự động phát (trình duyệt có thể chặn)</span></div>
+          <div><code>loop</code><span>Phát lặp lại</span></div>
+          <div><code>poster</code><span>Ảnh đại diện trước khi video phát</span></div>
+          <div><code>iframe: src, width, height, title</code><span>Nguồn, kích thước và mô tả khung</span></div>
+        </div>
+      </section>
+
+      <section class="cheatsheet">
+        <p class="eyebrow">FINAL_CHECK // EXAM MODE</p>
+        <h2>Những cặp dễ nhầm</h2>
+        <div class="compare-list">
+          <div><code>&lt;ul&gt;</code><span>Không thứ tự</span><b>↔</b><code>&lt;ol&gt;</code><span>Có thứ tự</span></div>
+          <div><code>&lt;td&gt;</code><span>Ô dữ liệu</span><b>↔</b><code>&lt;th&gt;</code><span>Ô tiêu đề</span></div>
+          <div><code>colspan</code><span>Gộp cột / ngang</span><b>↔</b><code>rowspan</code><span>Gộp hàng / dọc</span></div>
+          <div><code>href</code><span>Địa chỉ liên kết</span><b>↔</b><code>src</code><span>Nguồn tài nguyên</span></div>
+          <div><code>&lt;div&gt;</code><span>Dạng khối</span><b>↔</b><code>&lt;span&gt;</code><span>Nội dòng</span></div>
+          <div><code>Tuyệt đối</code><span>Địa chỉ đầy đủ</span><b>↔</b><code>Tương đối</code><span>Tính từ tệp hiện tại</span></div>
+        </div>
+        <button id="checkButton" type="button">[ ĐÁNH DẤU ĐÃ ÔN XONG ]</button>
+        <p id="checkMessage" aria-live="polite">Trạng thái: chưa hoàn thành.</p>
+      </section>
+      <footer><span>EOF // END OF NOTES</span><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
